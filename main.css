@@ -1,0 +1,52 @@
+* {
+	font-family: 'Taviraj', serif;
+}
+
+body {
+	background-color: white;
+}
+
+
+
+header {
+    float: left;
+    margin: 0 0 30px 0;
+    padding: 5px 0 0 5%;
+    width: 100%;
+    background-color: #84CEEB;
+}
+
+header h1 {
+	color: white;
+	font-size: 50px;
+
+	
+}
+
+
+label {
+	display: inline-block;
+	width: 25%;
+    float: left;
+    text-align: left;
+    overflow: auto;
+}
+
+.text-box, .select-box, .checkbox-options, .radio-options, textarea {
+    display: inline-block;
+    width: 50%;
+    margin-left: 10px;
+    overflow: auto;
+    float:left;
+}
+
+.form {
+	margin: auto auto auto 5%;
+	width: 80%;
+	padding: 2% 10% 10% 0;
+	overflow: auto;
+}
+
+label, .text-box, .select-box, .checkbox-options, .radio-options, textarea {
+	margin-top: 2.5%;
+}

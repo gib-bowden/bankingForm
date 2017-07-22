@@ -2,34 +2,39 @@
 <html>
 <head>
 	<title>Gib's Banking Form</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Taviraj:400,600" rel="stylesheet">
 </head>
 <body>
+	<header>
+		<h1>Loan Application Form</h1>
+	</header>
 	<div>
-		<h3>Gimme Your Info!</h3>
 		<div class="form">
-			<label for="">1. First Name:</label>
-			<input type="text" name="firstName" placeholder="First Name">
+			<h3>Gimme Your Info!</h3>
+			<label for="first-name">1. First Name:</label>
+			<input class="text-box" type="text" name="first-name" placeholder="First Name">
 			<br>
-			<label for="MI">2. Middle Initial:</label>
-			<input type="text" name="MI" placeholder="Middle Initial">
+			<label for="mi">2. Middle Initial:</label>
+			<input class="text-box" type="text" name="mi" placeholder="Middle Initial">
 			<br>
-			<label for="lastNmae">3. Last Name:</label>
-			<input type="text" name="lastName" placeholder="Last Name">
+			<label for="last-name">3. Last Name:</label>
+			<input class="text-box" type="text" name="last-name" placeholder="Last Name">
 			<br>
 			<label for="address">4. Applicant Address:</label>
-			<input type="text" name="address" placeholder="Address">
+			<input class="text-box" type="text" name="address" placeholder="Address">
 			<br>
 			<label for="occupation">5. Applicant Occupation:</label>
-			<input type="text" name="occupation" placeholder="Occupation">
+			<input class="text-box" type="text" name="occupation" placeholder="Occupation">
 			<br>
 			<label for="employeer">6. Applicant Employeer:</label>
-			<input type="text" name="employeer" placeholder="Employeer">
+			<input class="text-box" type="text" name="employeer" placeholder="Employeer">
 			<br>
 			<label for="employer-address">7. Employer Address:</label>
-			<input type="text" name="employer-address" placeholder="Employeer Address">
+			<input class="text-box" type="text" name="employer-address" placeholder="Employeer Address">
 			<br>
 			<label for="loan-type">8. Loan Type:</label><br>
-			<select multiple name="loan-type">
+			<select class="select-box" multiple name="loan-type">
 				<option value="volvo">Commercial</option>
 				<option value="saab">Real estate</option>
 				<option value="opel">Personal</option>
@@ -37,43 +42,40 @@
 			</select>
 			<br>
 			<label for="amount">9. Requestion Loan Amount:</label>
-			<input type="text" name="amount" placeholder="Loan Amount">
+			<input class="text-box" type="text" name="amount" placeholder="Loan Amount">
 			<br>
 			<label for="length">10. Loan Length</label>
 			<br>
-			<input type="radio" name="length" value="5">5 Years<br> 
-			<input type="radio" name="length" value="15">15 Years<br>
-			<input type="radio" name="length" value="30">30 Years<br>
+			<div class="radio-options">
+				<input class="radio" type="radio" name="length" value="5">5 Years<br> 
+				<input class="radio" type="radio" name="length" value="15">15 Years<br>
+				<input class="radio" type="radio" name="length" value="30">30 Years<br>
+			</div>
 			<br>
 			<label for="conditions">11. Special Conditions</label>
 			<br>
-			<input type="checkbox" name="conditions" value="1"> I have a down payment<br> 
-			<input type="checkbox" name="conditions" value="2"> Out-of-state resident<br>
-			<input type="checkbox" name="conditions" value="3"> Married<br>
-			<input type="checkbox" name="conditions" value="4"> Loan will be co-signed<br>
-			<label for="comments">12. Additional Comments</label><br>
+			<div class="checkbox-options">
+				<input class="checkbox" type="checkbox" name="conditions" value="1"> I have a down payment<br> 
+				<input class="checkbox" type="checkbox" name="conditions" value="2"> Out-of-state resident<br>
+				<input class="checkbox" type="checkbox" name="conditions" value="3"> Married<br>
+				<input class="checkbox" type="checkbox" name="conditions" value="4"> Loan will be co-signed<br>
+			</div>
+			<br>
+			<label for="comments">12. Additional Comments</label>
 			<textarea name="comments" rows="4" cols="50"> 
 			</textarea>
 			<br>
 			<label for="email">13. Applicant Email:</label>
-			<input type="email" name="email" placeholder="Email">
+			<input class="text-box" type="email" name="email" placeholder="Email">
 			<br>
 
-			<label for="phone">13. Applicant Phone:</label>
-			<input type="tel" name="email" placeholder="Phone Number">
+			<label for="phone">14. Applicant Phone:</label>
+			<input class="text-box" type="tel" name="email" placeholder="Phone Number">
 			<br>
 
-			<label for="url">13. LinkedIn URL:</label>
-			<input type="url" name="url" placeholder="LinkedIn">
+			<label for="url">15. LinkedIn URL:</label>
+			<input class="text-box" type="url" name="url" placeholder="LinkedIn">
 			<br>
-
-
-
-
-
-
-
-
 	</div>		
 </body>
 </html>
